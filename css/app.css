@@ -63,12 +63,13 @@ h1 {
   align-items: center;
   box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
   margin: 12px 5px 0px;
+  transition: transform 0.5s;
 }
 
 .deck .card.open {
-  -ms-transform: translate3d(-4px, 0, 0); /* IE 9 */
-  -webkit-transform: translate3d(-4px, 0, 0); /* Safari */
-  transform: translate3d(-4px, 0, 0);
+  -ms-transform: rotateZ(5deg); /* IE 9 */
+  -webkit-transform: rotateZ(5deg); /* Safari */
+  transform: rotateZ(5deg);
   background: #02b3e4;
   cursor: default;
 }
@@ -81,6 +82,9 @@ h1 {
   cursor: default;
   background: #02ccba;
   font-size: 33px;
+  -ms-transform: rotateZ(0deg); /* IE 9 */
+  -webkit-transform: rotateZ(0deg); /* Safari */
+  transform: rotateZ(0deg);
 }
 
 /*
